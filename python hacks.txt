@@ -1,0 +1,209 @@
+Module is a piece of code and this can be imported and used by another
+code
+
+package is a group of similar modules
+
+
+  list(map(int,input.split()))
+
+  To find the sum of digits in an number - sum(map(int,str(n)))
+
+  To trucate the decimal places - print('%.2f' % n)
+
+  'Vamsi' is not same as 'vamsi'
+
+  set - To eliminate duplicates of a list
+
+  To check palindrome- if(''. join(reversed(s))==s)
+
+  Types of arguments in python:
+
+   a. Positional arguments
+   b. Keyword arguments
+   c. Default arguments
+   d. Varaiable no.of arguments
+
+    coverting list to dict
+    l=iter(mylist)
+    res_dict=dict(zip(l,l))
+
+  Global variable once initialized will not
+   change inside a function.
+
+  type(1j)-complex
+  when we copy a record the id's are different
+
+  Lists allocation in memory
+  l1=[1,2,3,4]
+  l2=l1
+  l1[2]=4
+  print(l1)
+  print(l2)
+  print(id(l1))
+  print(id(l2))
+
+  output():
+
+  [1, 2, 4, 4]
+  [1, 2, 4, 4]
+  2421765477032
+  2421765477032
+
+  l1=[1,2,3,4]
+  l2=l1.copy()
+  l1[2]=4
+  print(l1)
+  print(l2)
+  print(id(l1))
+  print(id(l2))
+  [1, 2, 4, 4]
+  [1, 2, 3, 4]
+  2091995599528
+  2091995691040
+  
+
+strings allocation in memory
+s1='vamsi'
+s2=s1
+s1='v'
+print(s1)
+print(s2)
+print(id(s1))
+print(id(s2))
+
+output()
+2212797449752
+2212800281096
+
+  13.s1='a'
+  s2='b'
+  s1<s2
+  it compares the ascii values.
+
+  bool in python():
+  If no parameter is passed,
+  then by default it returns False.
+  otherwise returns true
+
+**
+ x = ['ab', 'cd']
+ for i in x:
+    x.append(i.upper())
+ print(x)
+ output():
+ none of the mentioned
+
+Explanation: The loop does not terminate as new elements are being added to the list in each iteration.
+
+  sets:
+  written with curly brackets
+  unordered,changeble,unindexed,unique
+
+  to reverse a string
+  x='vamsi'
+  v=x[::-1]
+
+  yield in python is just like return in c
+  it returns the value
+
+  strings are immutable but they can be appended
+  ex:
+  s='a'
+  s=s+'a'
+  print(s)
+ output():
+ aa
+ ex1:
+ s='vamsi'
+ s[0]='a'
+ print(s)
+ output():
+ error
+->
+print(int(True))
+output():
+1
+a=int(True) or int(false)
+print(a)
+output():
+1
+b=int(True) and int(false)
+compile error
+->
+a[2:2] or a[n:n]
+returns an empty lists
+->
+s1={ }
+s2={2}
+print(type(s1))
+print(type(s2))
+output():
+<class 'dict'>
+<class 'set'>
+->
+To sort a string :
+
+a='dca'
+v=sorted(a)
+output():
+acd
+->
+To reverse a string 
+''.join(reversed(s))
+->
+To find duplicates
+from collections import Counter
+l=list(map(int,input().split()))
+h=Counter(l)
+v=[]
+for i in range(len(l)):
+    if(h[l[i]]>1):
+        v.append(l[i])
+print(list(set(v)))
+->
+diaogonal sum
+
+for i in n:
+   for j in n:
+      if i==j:
+        d1+=a[i][j]
+      if i==n-j-1:
+        d2+=a[i][j]
+
+d1 is primary diagonal 
+d2 is secondary diagonal
+
+-->
+
+array right rotation
+n,d=map(int,input().split())
+l=list(map(int,input().split()))
+
+for i in range(d):
+    l.append(l.pop(0))
+print(*l)
+
+-->
+
+Sparse Matrix
+ 
+No.of zero elements should be greater
+than the no.of non - zero elements.
+
+PEP-Python Enhancement Proposal
+
+PICKLING is the process whereby a Python object
+is converted into a byte stream, and “unpickling” is the
+inverse operation, whereby a byte stream
+ss(from a binary file or bytes-like object) is converted back into an object 
+
+
+
+
+
+
+
+
+
+
+
